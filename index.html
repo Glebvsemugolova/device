@@ -10,25 +10,40 @@
 <body>
   <header class="header">
     <div class="header__wrapper">
-      <a href="#" class="header__logo">
+      <a href="#" class="header__logo logo">
         Device
       </a>
-      <div class="header-top">
-        <form action="#">
-          <input class="header__search" type="search" placeholder="Поиск по сайту">
-          <button type="submit" class="btn-search">Найти</button>
+      <div class="header__header-top header-top">
+        <form action="#" method="post" class="header-top__form-search">
+          <input class="header-top__search search" type="search" placeholder="Поиск по сайту">
+          <button type="submit" class="header-top__btn btn-search">Найти</button>
         </form>
-        <div class="header__user-block">
+        <div class="header-top__user-block user-block">
           <ul class="user-block__list">
-            <li class="user-block__item"><a href="#">Войти</a></li>
-            <li class="user-block__item"><a href="#">Сравнить</a></li>
-            <li class="user-block__item"><a href="#">Корзина</a></li>
+            <li class="user-block__item">
+              <a href="#">
+                <img src="img/user-in_black.png" width="13" height="12" alt="Войти">
+                Войти
+              </a>
+            </li>
+            <li class="user-block__item">
+              <a href="#">
+                <img src="img/user-compare_black.png" width="10" height="10" alt="Сравнить">
+                Сравнить
+              </a>
+            </li>
+            <li class="user-block__item">
+              <a href="#">
+                <img src="img/user-cart_black.png" width="12" height="12" alt="Сравнить">
+                Корзина
+              </a>
+            </li>
           </ul>
         </div>
       </div>
-      <nav class="header__nav">
-        <ul class="nav__list">
-          <li class="nav__item">
+      <nav class="header__nav nav">
+        <ul class="nav__list nav-list">
+          <li class="nav-list__item">
             <a href="#">Каталог товаров</a>
             <ul class="header__popup">
               <li class="popup__item"><a href="#">Виртуальная реальность</a></li>
@@ -39,16 +54,145 @@
               <li class="popup__item"><a href="#">Экшн-камеры</a></li>
             </ul>
           </li>
-
-          <li class="nav__item"><a href="#">Доставка</a></li>
-          <li class="nav__item"><a href="#">Гарантия</a></li>
-          <li class="nav__item"><a href="#">Контакты</a></li>
+          <li class="nav-list__item"><a href="#">Доставка</a></li>
+          <li class="nav-list__item"><a href="#">Гарантия</a></li>
+          <li class="nav-list__item"><a href="#">Контакты</a></li>
         </ul>
       </nav>
-
-
     </div>
   </header>
+  <main class="main">
+    <div class="main__wrapper">
+      <section class="slider">
+        <section class="offer-block">
+          <h1 class="offer-bloch__title">Делай селфи, как Бен Стиллер!</h1>
+          <p class="offer__info">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+        </section>
+        <section class="offer-block"><h1 class="offer-bloch__title"></h1></section>
+        <section class="offer-block"><h1 class="offer-bloch__title"></h1></section>
+      </section>
+      <div class="offers">
+        <ul class="offers__list">
+          <li class="offers__item">
+            <a href="#">
+              <div class="offers__picture-block">
+                <img src="img/offers1.png" alt="Виртуальная реальность" class="offers__picture">
+              </div>
+              <span class="offers__item-title">Виртуальная реальность</span>
+          </a>
+          </li>
+          <li class="offers__item">
+            <a href="#">
+              <div class="offers__picture-block">
+                <img src="img/offers-2.png" alt="Моноподы для селфи" class="offers__picture">
+              </div>
+              <span class="offers__item-title">Моноподы для селфи</span>
+          </a>
+          </li>
+          <li class="offers__item">
+            <a href="#">
+              <div class="offers__picture-block">
+                <img src="img/offers-3.png" alt="Экшн-камеры" class="offers__picture">
+              </div>
+              <span class="offers__item-title">Экшн-камеры</span>
+          </a>
+          </li>
+          <li class="offers__item">
+            <a href="#">
+              <div class="offers__picture-block">
+                <img src="img/offers-4.png" alt="Фитнес-браслеты" class="offers__picture">
+              </div>
+              <span class="offers__item-title">Фитнес-браслеты</span>
+          </a>
+          </li>
+          <li class="offers__item">
+            <a href="#">
+              <div class="offers__picture-block">
+                <img src="img/offers-5.png" alt="Умные часы" class="offers__picture">
+              </div>
+              <span class="offers__item-title">Умные часы</span>
+          </a>
+          </li>
+          <li class="offers__item">
+            <a href="#">
+              <div class="offers__picture-block">
+                <img src="img/offers-6.png" alt="Квадрокоптеры" class="offers__picture">
+              </div>
+              <span class="offers__item-title">Квадрокоптеры</span>
+          </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
 
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__left-block">
+        <a href="#" class="footer__logo logo">
+          Device
+        </a>
+        <span class="footer__address">г. Москва, ул. Строителей, 15</span>
+        <div class="footer__dash dash"></div>
+      </div>
+      <div class="footer__center-block">
+        <ul class="footer__nav-list nav-list">
+          <li class="nav-list__item"><a href="#">Доставка</a></li>
+          <li class="nav-list__item"><a href="#">Гарантия</a></li>
+          <li class="nav-list__item"><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a href="#">
+              facebook
+              <img src="img/facebook.png" alt="facebook">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#">
+              instagram
+              <img src="img/instagram.png" alt="instagram">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#">
+              twitter
+              <img src="img/twitter.png" alt="twitter">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__right-block">
+        <div class="footer__user-block user-block">
+          <ul class="user-block__list">
+            <li class="user-block__item">
+              <a href="#">
+                <img src="img/user-in.png" width="13" height="12" alt="Войти">
+                Войти
+              </a>
+            </li>
+            <li class="user-block__item">
+              <a href="#">
+                <img src="img/user-compare.png" width="10" height="10" alt="Сравнить">
+                Сравнить
+              </a>
+            </li>
+            <li class="user-block__item">
+              <a href="#">
+                <img src="img/user-cart.png" width="12" height="12" alt="Сравнить">
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </div>
+        <span class="footer__tel-number">Тел.: +7 (495) 495-95-95</span>
+        <div class="footer__academy-logo">
+          <a href="#">
+            <img src="img/academy-logo.png" alt="Сайт академии">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
